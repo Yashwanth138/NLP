@@ -1,0 +1,17 @@
+
+import numpy as np
+import nltk
+from nltk.tokenize import word_tokenize
+import spacy
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+nltk.download('punkt')
+spacy.cli.download("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
+corpus = "One disadvantage of using 'Best Of' samping is that it may lead to limited exploration of the model's
+knowledge and creativity. By focusing on the most probable next words, the model might generate responses that are
+safe and conventional, potentially missing out on more diverse and innovative outputs.
+ 
+
